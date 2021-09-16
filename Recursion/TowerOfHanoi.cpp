@@ -15,8 +15,8 @@ void move(int n, char src, char helper,char dest){
 }
 
 int main(){
-    int n = 5;
-    //cin>>n;
+    int n;
+    cin>>n;
 
     move(n, 'A', 'B', 'C');
 
