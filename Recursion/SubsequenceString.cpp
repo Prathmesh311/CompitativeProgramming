@@ -24,8 +24,6 @@ int main(){
     char output[10];
 
     cout<<generateSubsequence(input, output, 0, 0, 0);
-
     
-
     return 0;
 }
