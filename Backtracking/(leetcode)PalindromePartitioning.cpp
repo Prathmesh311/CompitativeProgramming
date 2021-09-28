@@ -28,7 +28,6 @@ public:
                 //Backtracking
                 str = pal.back();
                 pal.pop_back();
-                cout<<str<<" ";
             }
         }
         return;
