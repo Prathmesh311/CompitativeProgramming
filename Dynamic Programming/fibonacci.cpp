@@ -46,8 +46,8 @@ int fiboSpaceOptimization(int n){
 
 
 int main(){
-    int n = 12;
-    //cin>>n;
+    int n;
+    cin>>n;
     int dp[100] = {0};
 
     //cout<<fiboTopDown(n, dp);
