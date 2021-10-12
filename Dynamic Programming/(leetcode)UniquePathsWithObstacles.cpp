@@ -35,7 +35,6 @@ public:
                 }
             }
         }
-        
         return dp[row-1][col-1];
     }
 };
