@@ -29,20 +29,34 @@ node* buildTree(){
     return root;
 }
 
-void preOrderTraversal(node* root){
+
+void inOrderTraversal(node* root){
     if(root == NULL){
         return;
     }
 
+    inOrderTraversal(root->left);
     cout<<root->data<<" ";
-    preOrderTraversal(root->left);
-    preOrderTraversal(root->right);
+    inOrderTraversal(root->right);
 }
 
+void postOrderTraversal(node* root){
+    if(root == NULL){
+        return;
+    }
 
+    postOrderTraversal(root->left);
+    postOrderTraversal(root->right);
+    cout<<root->data<<" ";
+}
 int main(){
     node* root = buildTree();
-    preOrderTraversal(root);
+
+    cout<<"InOrder: ";
+    inOrderTraversal(root);
+
+    cout<<endl<<"PostOrder";
+    postOrderTraversal(root);
 
     return 0;
 }
