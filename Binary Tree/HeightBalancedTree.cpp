@@ -47,7 +47,9 @@ Pair heightBalancedTree(node *root){
     Pair left = heightBalancedTree(root->left);
     Pair right = heightBalancedTree(root->right);
 
-    if(abs(left.height - right.height) <= 1 && left.isBalanced && right.isBalanced){
+    if(abs(left.height - right.height) <= 1 
+        && left.isBalanced 
+        && right.isBalanced){
             p.isBalanced = true;
     }else{
         p.isBalanced = false;
